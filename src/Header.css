@@ -1,0 +1,21 @@
+.header {
+    background-image: url('http://2.bp.blogspot.com/-tTjKTQlQKHo/UR03zASXCLI/AAAAAAAADEc/scsyqW3QSLY/s1600/Chuck+Norris+in+Way+of+the+Dragon.jpg');
+    width: 100vw;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+.title {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 200px;
+}

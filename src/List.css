@@ -1,0 +1,11 @@
+.favList {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.favItem {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
