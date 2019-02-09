@@ -5,8 +5,8 @@ export default function GetChuckJoke(props) {
 
 
     return(
-        
-            <button onClick={ props.action }>Get Joke</button>
-
+            <div>
+                 <button onClick={ props.action }>Get Joke</button>
+            </div>
     )
 }

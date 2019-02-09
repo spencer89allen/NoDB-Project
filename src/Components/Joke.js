@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import '../Joke.css'
+
 class Joke extends Component {
 
     state = {
@@ -63,14 +65,25 @@ class Joke extends Component {
                             </div>
                         )
                         : (
-                            <form onSubmit={() => console.log('submitted')}>
+                            <div className="edit">
+                                <form onSubmit={() => console.log('submitted')}>
 
-                                <input value={this.state.editInput} onChange={ (e) => this.handleUpdateInput(e.target.value)}/>
-
-                                <button onClick={e => this.updateJoke(e)}>Post</button>
-                                <button type="button">Cancel</button>
-
-                            </form>
+                                    <div className="editBox"> 
+                                        <input 
+                                            value={this.state.editInput} 
+                                            onChange={ (e) => this.handleUpdateInput(e.target.value)}
+                                            style={{width: '25vw'}}
+                                            />
+                                            <div className='buttons'>
+                                                <button onClick={e => this.updateJoke(e)}>Post</button>
+                                                <button 
+                                                type="button" 
+                                                onClick={ () => this.setState({isEditing: false,})}
+                                                >Cancel</button>
+                                            </div>
+                                    </div>
+                                </form>
+                            </div>
                         )
                     }
 

@@ -10,8 +10,17 @@ class CreateJoke extends Component {
     render() {
         return (
             <div>
-                <input value={this.state.joke} onChange={ (e) => this.handleInput(e.target.value)}/>
-                <AddButton action={ () => this.props.onJokeAdd(this.state.joke)}></AddButton>
+                <input 
+                    value={this.state.joke} 
+                    style={{width: '35vw'}}
+                    onChange={ (e) => this.handleInput(e.target.value)}/>
+
+                <div>
+
+                    <AddButton action={ () => this.props.onJokeAdd(this.state.joke)}></AddButton>
+                    
+                </div>
+
             </div>
         )
     }

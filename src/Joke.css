@@ -1,0 +1,10 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+}
+
+.editBox {
+    display: flex;
+    flex-direction: column;
+    margin: 10px; 
+}
